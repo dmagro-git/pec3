@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>OSCAR CLUB - INDEX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="inicio" class="navbar">
+            <div class="logo">
+                <img src ="img/oscarsclub-isologo.png" alt="Logo">
+                <div class="centered">
+                    <p><a href="index.html">oscars<i>club</i></a></p>
+                </div>
+            </div>
+            <div class="navbarMenu">
+                <ul class="listMenu">
+                    <li>
+                        <a href="clubes-tematicos.html">CLUBES TEMÁTICOS</a>
+                    </li>
+                    <li>
+                        <a href="sesiones-2020.html">SESIONES 2020</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button type="submit" form= "certicado_form" onclick="">Iniciar sesión</button>
+            </div>           
+        </div>
+    </header>
+    <div class="maincontent">
+        <div class="content1">
+            <h2>¿Qué es Oscars Club?</h2>
+            <p>Oscars Club organiza clubes virtuales de cine de diversos géneros y en diferentes lenguas, 
+            para los amantes del cine que quieran compartir reflexiones y debatir sobre las películas que 
+            les interesan sin necesidad de tener que ir a un espacio físico.</p>
+        </div>
+        <div class="content2">
+            <h2>¿Cómo funciona?</h2>
+            <div class="imglist">
+                <figure>
+                    <img src="img/howto-register.png" alt="register">
+                    <figcaption>Regístrate</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/howto-club.png" alt="club" >
+                    <figcaption>Inscríbete en un club</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/howto-film.png" alt="film">
+                    <figcaption>Elige una película</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/howto-speech.png" alt="speech">
+                    <figcaption>Disfruta del debate</figcaption>
+                 </figure>
+            </div>
+        </div>
+        <div class="content3">
+            <h2>Únete al club</h2>
+            <div>
+                <div class="contentform">
+                    <h2>
+                        Estamos mirando tu próxima película preferida.<br>
+                        ¿Te lo vas a perder?
+                    </h2>
+                </div>
+                <div class="contentform">
+                    <form id="form_registro">
+                    <div>
+                        <p><input type="text" id="name" name="name" placeholder="Nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð -]{2,64}" required>  </p>
+                        <p><input type="text" id="email" name="email" placeholder="Correo electrónico" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð -]{2,64}" required>  </p>
+                        <p><input type="text" id="Contraseña" name="Contraseña" placeholder="Contraseña" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð -]{2,64}" required> </p>
+                    </div>
+                    <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE<strong> OSCARS CLUB. Finalidades</strong>: recogida de datos para la inscripción como socio del interesado.<strong>Legitimación:</strong> Consentimiento del interesado. 
+                    <strong>Destinatarios:</strong> No están previstas cesiones de datos a terceros, salvo obligación legal. <strong>Derechos:</strong> Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, 
+                    suprimir sus datos y otros derechos dirigiéndose a oscarsclub@oscarsclub.org. <strong>Información Adicional:</strong> 
+                    Puede ampliar la información en el enlace de <a href="#">Aviso Legal</a> y <a href="#">Política de privacidad</a>.  
+                    </p> 
+                    <label><input type="checkbox" id="cbox1" value="1_checkbox">He leído y acepto la política de privacidad</label>
+                    <div>
+                        <button type="submit" form= "form_registro" onclick="myFunction()">REGISTRARSE</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerContent">
+            <div class="footerBox left">
+                <ul class="listMenuFooter">
+                    <li >
+                        <a href="#">Sobre nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#">Aviso legal</a>
+                    </li>
+                    <li>
+                        <a href="#">Política de privacidad</a>
+                    </li>
+                </ul>         
+            </div>
+            <div class="footerBox">
+                <ul class="listMenuFooter right">
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerBox left">
+                <ul class="listMenuFooterBlock">
+                    <li >© 2020 Nombre y apellidos del estudiante</li>
+                    <li>Iconos <a href="https://www.flaticon.com">flaticon.com </a></li>
+                    <li>Imágenes <a href="https://unsplash.com">unsplash.com </a></li>
+                </ul>         
+            </div>
+            <div class="footerBox right">
+                <a href="#inicio">&xwedge;</a>
+            </div>                  
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+         alert("registro del usuario " + document.getElementById("name").value + "\n");
+        }
+    </script>
+</body>
+</html>
