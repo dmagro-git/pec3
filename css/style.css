@@ -15,10 +15,10 @@ body{
     display: flex;
     flex-flow: column;
 }
-main{
+/* main{
 flex-grow: 1;
 }
-
+ */
 header{
     width: 100%;
     font-family: 'Noto Serif', serif, Arial, Helvetica;
@@ -117,7 +117,8 @@ footer{
     font-family: 'Open Sans', Arial,  Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     color:#FFFFFF;
     text-decoration: none;
     list-style-type:none;
@@ -125,13 +126,12 @@ footer{
 }
 .listMenuFooter li::after{
     display: inline-block;
-    position:fixed;
     width:1px;
     height:1px;
     content:" ";
-    border:2px solid #FFFFFF;
+    border:2px solid ;
     background-color: #FFFFFF;
-    border-radius:100%;
+    border-radius:50%;
     margin-top: 0.5rem;
     
 }
@@ -552,15 +552,15 @@ color: rgba(28, 28, 28, 0.5) ;
     border-radius: 50%;
     float:left;
     padding-right: 1.5rem;
-    shape-outside:circle();
+    shape-outside:circle(); /*da error por que no en todas las versiones funciona*/
 }
 .contentR p{
     text-align: justify;
 }
 iframe{
     width: 100%;
-    max-width:560;
-    max-height:315;
+    max-width:560px;
+    max-height:315px;
 }
 dt{
     font-weight: 700;
@@ -602,10 +602,13 @@ p + h3{
 }
 .infolist li:last-child::after{
     display:none;
-  }
+}
 .details h2{
-      text-align: left;
-  }
+    text-align: left;
+}
+iframe{
+    border: 0;/* en lugar de frameborder="0" */
+}
 
   @media screen and (max-width: 1024px) {
     .detailscontent{
